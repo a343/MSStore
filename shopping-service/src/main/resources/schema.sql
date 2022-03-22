@@ -13,6 +13,7 @@ CREATE TABLE tbl_invoce_items (
                                 productId    INT,
                                 createAt    DATETIME,
                                 state    VARCHAR(255) NOT NULL,
+                                invoice_id INT,
                          		FOREIGN  KEY(invoice_id) REFERENCES tlb_invoices(id)
                                 
 );

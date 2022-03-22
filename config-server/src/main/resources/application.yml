@@ -6,8 +6,8 @@ spring:
     config:
       server:
         git:
-          uri: file:C:\\\personal\\Microservicios store - copia\\\config-data
-          #searchPaths: config-data
+          uri: https://github.com/a343/MSStore
+          searchPaths: config-data
           #username: ${GIT_USER}
           #password: ${GIT_PASSWORD}
   security:
