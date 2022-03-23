@@ -1,18 +1,18 @@
 CREATE TABLE tlb_invoices (
                                 id          INT PRIMARY KEY,
-                                numberInvoice    VARCHAR(255) NOT NULL,
+                                number_invoice    VARCHAR(255) NOT NULL,
                                 description    VARCHAR(255) NOT NULL,
-                                customerId    INT,
-                                createAt    DATETIME,
+                                customer_id    INT,
+                                create_at    DATETIME,
                                 state    VARCHAR(255) NOT NULL
 );
-CREATE TABLE tbl_invoce_items (
+CREATE TABLE tbl_invoice_items (
                                 id          INT PRIMARY KEY,
                                 quantity    DOUBLE,
                                 price    DOUBLE,
-                                productId    INT,
+                                product_id    INT,
                                 createAt    DATETIME,
-                                state    VARCHAR(255) NOT NULL,
+                                state    VARCHAR(255),
                                 invoice_id INT,
                          		FOREIGN  KEY(invoice_id) REFERENCES tlb_invoices(id)
                                 
