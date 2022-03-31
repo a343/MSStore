@@ -6,6 +6,7 @@ spring:
     config:
       server:
         git:
+          default-label: Main
           uri: https://github.com/a343/MSStore
           searchPaths: config-data
           #username: ${GIT_USER}
